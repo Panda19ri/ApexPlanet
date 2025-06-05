@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Web Development Task</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 20px auto;
+      border: 3px solid #007BFF;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      margin: 15px 5px 5px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #218838;
+    }
+
+    .flex-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .flex-box {
+      flex: 1;
+      padding: 10px;
+      min-width: 200px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      font-size: 14px;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💻 Web Development Basics</h1>
+    <p>Internship Task – ApexPlanet</p>
+  </header>
+
+  <div class="container">
+    <h2>📝 Objective</h2>
+    <p>Learn and apply foundational HTML, CSS, and JavaScript concepts to build an interactive webpage.</p>
+
+    <div class="flex-row">
+      <div class="flex-box">
+        <h3>HTML</h3>
+        <p>Structure the webpage using headings, paragraphs, images, and links.</p>
+      </div>
+      <div class="flex-box">
+        <h3>CSS</h3>
+        <p>Style the page using color, spacing, borders, and layout using Flexbox.</p>
+      </div>
+      <div class="flex-box">
+        <h3>JavaScript</h3>
+        <p>Add interactivity using buttons and event handling.</p>
+      </div>
+    </div>
+
+    <img src="coding.jpg" alt="Coding Image"/>
+
+    <h2>🔗 Learn More</h2>
+    <p>Explore more at <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>.</p>
+
+    <button class="btn" onclick="showMessage()">Click Me</button>
+    <p id="output" style="font-weight: bold; margin-top: 10px;"></p>
+  </div>
+
+  <footer>
+    © 2025 Pandarikaksha Pokala | ApexPlanet Internship
+  </footer>
+
+  <script>
+    function showMessage() {
+    const output = document.getElementById("output");
+    output.textContent = "Hi! 👋";
+  }
+  </script>
+</body>
+</html>
